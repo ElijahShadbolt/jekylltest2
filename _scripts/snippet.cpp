@@ -1,5 +1,6 @@
 ---
 id: snippet.cpp
+scriptname: snippet.cpp
 codetype: cpp
 ---
 #include <iostream>

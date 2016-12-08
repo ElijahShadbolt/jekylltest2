@@ -9,9 +9,13 @@ sources:
 ---
 
 {% for script in site.scripts %}
+<hr/>
+
 {{ script.path }}
 
 id: {{ script.id }}
+name: {{ script.name }}
+scriptname: {{ script.scriptname }}
 
 codetype: {{ script.codetype }}
 
@@ -32,8 +36,8 @@ path: {{ script.path }}
 
 [Download: {{ file.id }}]({{ site.baseurl }}/_code_snippets/{{ script.id }})
 
-```{{ file.codetype }}
-{{ file.content }}
+```{{ script.codetype }}
+{{ script.content }}
 ```
 
 {% endfor %}
