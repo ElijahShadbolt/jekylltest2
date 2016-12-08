@@ -13,30 +13,28 @@ sources:
 
 {{ script.path }}
 
-id: {{ script.id }}
+scriptname: {{ script.scriptname }}
 
-name: {{ script.name }}
+codetype: {{ script.codetype }}
+
+```{{ script.codetype }}
+{{ script.content }}
+```
+{% endfor %}
+
+{% for scriptname in page.sources %}
+{% assign scripts = site.scripts | where: 'scriptname', {{scriptname}}%}
+{% for script in scripts %}
+
+<hr/>
+
+path: {{ script.path }}
 
 scriptname: {{ script.scriptname }}
 
 codetype: {{ script.codetype }}
 
-{{ script.content }}
-{% endfor %}
-
-{% for fileid in page.sources %}
-{% assign scripts = site.scripts | where: 'id', {{fileid}}%}
-{% for script in scripts %}
-
-<hr/>
-
-id: {{ script.id }}
-
-codetype: {{ script.codetype }}
-
-path: {{ script.path }}
-
-[Download: {{ file.id }}]({{ site.baseurl }}/_code_snippets/{{ script.id }})
+[Download: {{ script.scriptname }}]({{ site.baseurl }}/_scripts/{{ script.scriptname }})
 
 ```{{ script.codetype }}
 {{ script.content }}
