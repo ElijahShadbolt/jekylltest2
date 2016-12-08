@@ -8,6 +8,11 @@ sources:
   - "htmlexample.html"
 ---
 
+{% for script in site.scripts%}
+{{ script.path }}
+{{ script.content }}
+{% endfor %}
+
 {% for fileid in page.sources %}
 {% assign scripts = site.scripts | where: 'id', {{fileid}}%}
 {% for file in scripts %}
