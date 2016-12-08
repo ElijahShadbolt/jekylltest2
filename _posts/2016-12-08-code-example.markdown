@@ -11,7 +11,7 @@ sources:
 {% for script in site.scripts %}
 <hr/>
 
-{{ script.path }}
+path: {{ script.path }}
 
 scriptname: {{ script.scriptname }}
 
