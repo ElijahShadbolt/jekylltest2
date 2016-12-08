@@ -8,24 +8,29 @@ sources:
   - "htmlexample.html"
 ---
 
-{% for script in site.scripts%}
+{% for script in site.scripts %}
 {{ script.path }}
+
+id: {{ script.id }}
+
+codetype: {{ script.codetype }}
+
 {{ script.content }}
 {% endfor %}
 
 {% for fileid in page.sources %}
 {% assign scripts = site.scripts | where: 'id', {{fileid}}%}
-{% for file in scripts %}
+{% for script in scripts %}
 
 <hr/>
 
-id: {{ file.id }}
+id: {{ script.id }}
 
-codetype: {{ file.codetype }}
+codetype: {{ script.codetype }}
 
-path: {{ file.path }}
+path: {{ script.path }}
 
-[Download: {{ file.id }}]({{ site.baseurl }}/_code_snippets/{{ file.id }})
+[Download: {{ file.id }}]({{ site.baseurl }}/_code_snippets/{{ script.id }})
 
 ```{{ file.codetype }}
 {{ file.content }}
