@@ -22,6 +22,8 @@ kramdown:
   syntax_highlighter: rouge
 #theme: minima
 
+highlight_css: "syntax.css"
+
 gem 'github-pages', group: :jekyll_plugins
 gems:
   - jekyll-feed
