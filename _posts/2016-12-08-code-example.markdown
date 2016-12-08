@@ -14,7 +14,9 @@ sources:
 {{ script.path }}
 
 id: {{ script.id }}
+
 name: {{ script.name }}
+
 scriptname: {{ script.scriptname }}
 
 codetype: {{ script.codetype }}
