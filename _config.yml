@@ -6,9 +6,23 @@ baseurl: "/jekylltest2" # the subpath of your site, e.g. /blog
 #twitter_username: jekyllrb
 github_username: Cresspresso
 
+permalink: /:categories/:year-:month-:day/:title/
+
+include:
+  - _scripts
+collections:
+  - scripts
+
 # Build settings
+excerpt_separator: ""
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 #theme: minima
+
+gem 'github-pages', group: :jekyll_plugins
 gems:
   - jekyll-feed
 exclude:
