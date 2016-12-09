@@ -1,0 +1,9 @@
+---
+scriptname: markdownexample.markdown
+codetype: markdown
+---
+This is a random markdown page.
+
+Too bad [this link][linkref] is cooler than you.
+
+[linkref][https://www.google.com/]
