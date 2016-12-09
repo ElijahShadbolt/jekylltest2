@@ -18,12 +18,6 @@ sources:
     {% highlight cpp %}
     {{ script.content }}
     {% endhighlight %}
-    <hr/>
-    
-    {% capture codeblock %}```{{ script.codetype }}
-{{ script.content }}
-```{% endcapture %}
-    {{ codeblock | markdownify }}
 </div>
 
 {% endfor %}
