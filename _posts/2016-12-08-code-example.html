@@ -15,7 +15,11 @@ sources:
     <hr/>
     
     <p><a href="{{ site.baseurl }}/{{ script.relative_path }}" download="{{ script.scriptname }}">Download: {{ script.scriptname }}</a></p>
-
+    {% highlight cpp %}
+    {{ script.content }}
+    {% endhighlight %}
+    <hr/>
+    
     {% capture codeblock %}```{{ script.codetype }}
 {{ script.content }}
 ```{% endcapture %}

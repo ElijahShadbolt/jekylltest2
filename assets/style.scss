@@ -1,6 +1,6 @@
 ---
 ---
-@import url(syntax_highlighting/native.css);
+@import url(syntax_highlighting/{{ site.highlight_css }});
 
 body {
     background: black;
@@ -8,4 +8,11 @@ body {
 }
 a {
     color: aqua;
+}
+.highlight {
+    padding: 10px;
+    border: 3px outset #666;
+}
+.highlight pre {
+    margin: 0;
 }
