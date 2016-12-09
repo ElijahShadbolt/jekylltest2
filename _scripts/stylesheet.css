@@ -1,0 +1,10 @@
+---
+scriptname: stylesheet.css
+codetype: css
+---
+html {
+    color: red;
+}
+body {
+    background: blue;
+}

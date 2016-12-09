@@ -1,5 +1,9 @@
 {% case include.codetype %}
-{% when 'cpp'  %}{% highlight cpp %}{{ include.content }}{% endhighlight %}{% assign test=true %}
-{% when 'html' %}{% highlight html %}{{ include.content }}{% endhighlight %}{% assign test=true %}
+{% when 'cpp' or 'c++'           %}{% highlight cpp      %}{{ include.content }}{% endhighlight %}
+{% when 'cs' or 'csharp' or 'c#' %}{% highlight csharp   %}{{ include.content }}{% endhighlight %}
+{% when 'html' or 'htm'          %}{% highlight html     %}{{ include.content }}{% endhighlight %}
+{% when 'md' or 'markdown'       %}{% highlight markdown %}{{ include.content }}{% endhighlight %}
+{% when 'js' or 'javascript'     %}{% highlight js       %}{{ include.content }}{% endhighlight %}
+{% when 'css'                    %}{% highlight css      %}{{ include.content }}{% endhighlight %}
 {% else %}{{ include.content }}
 {% endcase %}
