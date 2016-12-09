@@ -1,0 +1,5 @@
+{% case include.codetype %}
+{% when 'cpp'  %}{% highlight cpp %}{{ include.content }}{% endhighlight %}{% assign test=true %}
+{% when 'html' %}{% highlight html %}{{ include.content }}{% endhighlight %}{% assign test=true %}
+{% else %}{{ include.content }}
+{% endcase %}
