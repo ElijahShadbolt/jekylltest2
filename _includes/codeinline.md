@@ -1,1 +1,0 @@
-`{{ include.content }}`{:.highlight .language-{{ include.codetype }} }

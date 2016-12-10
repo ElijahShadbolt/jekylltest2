@@ -1,2 +1,11 @@
-{% capture md %}{% include codeblock.md content=include.content codetype=include.codetype %}{% endcapture %}
+{% if include.block %}
+{% capture md %}
+{% include codeblock.md block=true content=include.content codetype=include.codetype %}
+{% endcapture %}
 {{ md | markdownify | remove: '<p>' | remove: '</p>' }}
+{% else %}
+{% capture md %}
+{% include codeblock.md content=include.content codetype=include.codetype %}
+{% endcapture %}
+{{ md | markdownify | remove: '<p>' | remove: '</p>' }}
+{% endif %}

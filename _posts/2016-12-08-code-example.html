@@ -10,7 +10,7 @@ sources:
   - "markdownexample.markdown"
 ---
 <div>
-    <p>This is a paragraph full of random things and snippets of code like {% include codeinline.html content='public void Destroy() { }' codetype='csharp' %} and {% include codeinline.html content='int *p = new int(4);' codetype='cpp' %}.</p>
+    <p>This is a paragraph full of random things and snippets of code like {% include codeblock.html codetype='csharp' content='public void Destroy() { }' %} and {% include codeblock.html codetype='cpp' content='int *p = new int(4);' %}.</p>
 </div>
 
 
@@ -21,10 +21,9 @@ sources:
     <hr/>
     
     <p><a href="{{ site.baseurl }}/{{ script.relative_path }}" download="{{ script.scriptname }}">Download: {{ script.scriptname }}</a></p>
-    {% include codeblock.html codetype=script.codetype content=script.content %}
+    {% include codeblock.html block=true codetype=script.codetype content=script.content %}
 
 </div>
 
 {% endfor %}
 {% endfor %}
-<hr/>
