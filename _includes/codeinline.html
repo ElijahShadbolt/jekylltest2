@@ -1,2 +1,2 @@
-{% capture rawdata %}`{{ include.content }}`{:.language-{{ include.codetype }} .highlight}{% endcapture %}
-{{ rawdata | markdownify | remove: '<p>' | remove: '</p>' }}
+{% capture md %}{% include codeinline.md content=include.content codetype=include.codetype %}{% endcapture %}
+{{ md | markdownify | remove: '<p>' | remove: '</p>' }}
