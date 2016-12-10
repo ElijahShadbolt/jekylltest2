@@ -27,12 +27,10 @@ a {
     border-radius: 5px;
 }
 pre.highlight {
+    display: block;
     margin: 0;
     padding: 0;
     border: 1px solid red;
-}
-pre {
-    border: 5px solid blue;
 }
 .codeblock {
     display: block;
