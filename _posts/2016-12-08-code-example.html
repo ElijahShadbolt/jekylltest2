@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Code Example"
+title:  "Code Example (html Post)"
 date:   2016-12-08 16:40:46 +1300
 categories: coding
 sources: 
@@ -9,6 +9,10 @@ sources:
   - "stylesheet.css"
   - "markdownexample.markdown"
 ---
+<div>
+    <p>This is a paragraph full of random things and snippets of code like {% include codeinline.html content='public void Destroy() { }' codetype='csharp' %} and {% include codeinline.html content='int *p = new int(4);' codetype='cpp' %}.</p>
+</div>
+
 
 {% for scriptname in page.sources %}
 {% assign scripts = site.scripts | where: 'scriptname', {{scriptname}}%}

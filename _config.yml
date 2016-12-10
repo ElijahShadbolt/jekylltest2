@@ -23,7 +23,7 @@ kramdown:
   hard_wrap: false
 #theme: minima
 
-highlight_css: "syntax.css"
+highlight_css: "native.css"
 
 gems:
   - jekyll-feed
