@@ -34,7 +34,7 @@
 .highlighter-rouge .s { color: #ed9d13 } /* Literal.String */
 .highlighter-rouge .na { color: #bbbbbb } /* Name.Attribute */
 .highlighter-rouge .nb { color: #24909d } /* Name.Builtin */
-.highlighter-rouge .nc { color: #447fcf; text-decoration: underline } /* Name.Class */
+.highlighter-rouge .nc { color: #447fcf; font-weight: bold; } /* Name.Class */
 .highlighter-rouge .no { color: #40ffff } /* Name.Constant */
 .highlighter-rouge .nd { color: #ffa500 } /* Name.Decorator */
 .highlighter-rouge .ni { color: #d0d0d0 } /* Name.Entity */

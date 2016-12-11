@@ -15,28 +15,30 @@ nav a {
 a {
     color: #8cf;
 }
+
+/* syntax highlighting */
 .highlighter-rouge {
-    margin: 0;
     overflow-x: auto;
     
     font-family: monospace;
     white-space: pre;
     
     display: inline;
+    margin: 0;
     padding: 1px 4px 2px 4px;
     border-radius: 5px;
 }
 pre.highlight {
-    display: block;
+    display: inline-block;
     margin: 0;
     padding: 0;
     margin-bottom: -1em;
 }
 .codeblock {
     display: block;
-    margin: 0;
     margin-top: 1em;
     margin-bottom: 1em;
     padding: 10px;
     border: 1px inset #777;
 }
+
